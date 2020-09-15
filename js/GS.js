@@ -9,13 +9,15 @@
         }).parent().addClass('active');*/
 });
 function loadnav() {
-	$("#nav-placeholder").load("/nav.html");
-	$(".navbar").unwrap();
+	$("#nav-placeholder").load("/nav.html", function(){
+		$(".navbar").unwrap();
+	});
+	
 }
 
 function activatenavigation(){
-	let currentHtml = window.location.href.split("/")[window.location.href.split("/").length-1];
-	let navlinks = [];
+	var currentHtml = window.location.href.split("/")[window.location.href.split("/").length-1];
+	var navlinks = [];
 	navlinks = document.getElementsByClassName("nav-link");
 	for (let i in navlinks){
 		if(navlinks[0].href = currentHTML){
