@@ -20,8 +20,8 @@ function activatenavigation(){
 	var navlinks = [];
 	navlinks = document.getElementsByClassName("nav-link");
 	for (let i in navlinks){
-		if(navlinks[0].href = currentHTML){
-			navlinks.classList.add("active");
+		if(navlinks[i].href = currentHTML){
+			navlinks[i].classList.add("active");
 		}
 	}
 };
