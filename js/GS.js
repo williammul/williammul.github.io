@@ -19,7 +19,7 @@ function activatenavigation(){
 	var currentHTML = window.location.href.split("/")[window.location.href.split("/").length-1];
 	var navlinks = [];
 	navlinks = document.getElementsByClassName("nav-link");
-	for (let i in navlinks){
+	for (var i in navlinks){
 		if(navlinks[i].href = currentHTML){
 			navlinks[i].classList.add("active");
 		}
