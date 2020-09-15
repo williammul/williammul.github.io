@@ -19,8 +19,11 @@ function activatenavigation(){
 	var currentHTML = window.location.href.split("/")[window.location.href.split("/").length-1];
 	var navlinks = [];
 	navlinks = document.getElementsByClassName("nav-link");
-	for (var i in navlinks){
+	for (var i of navlinks){
+		console.log(i);
+		console.log(currentHTML);
 		if(navlinks[i].href = currentHTML){
+			console.log(navlinks[i]);
 			navlinks[i].classList.add("active");
 		}
 	}
