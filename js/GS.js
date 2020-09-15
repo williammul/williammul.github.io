@@ -16,7 +16,8 @@ function loadnav() {
 }
 
 function activatenavigation(){
-	var currentHtml = window.location.href.split("/")[window.location.href.split("/").length-1];
+	var currentHtml;
+	currentHtml = window.location.href.split("/")[window.location.href.split("/").length-1];
 	var navlinks = [];
 	navlinks = document.getElementsByClassName("nav-link");
 	for (let i in navlinks){
