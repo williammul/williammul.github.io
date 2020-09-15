@@ -1,6 +1,6 @@
   $(document).ready(function () {
 	  loadnav();
-	  activatenagivation();
+	  activatenavigation();
 	  
        /* var url = window.location;
         $('a.nav-item[href="'+ url +'"]').parent().addClass('active');
