@@ -20,7 +20,7 @@ function activatenavigation(){
 	navlinks = $("li.nav-item");
 	for (var i of navlinks){
 		console.log("The value of i is:" + i + "backend of i");
-		if(i.querySelector("a[href^=" + CSS.escape(currentHTML)"]")!== null ){
+		if(i.querySelector("a[href^=" + CSS.escape(currentHTML)+"]")!== null ){
 			console.log(i.querySelector('a[href^=currentHTML]'));
 			i.classList.add("active");
 		}
