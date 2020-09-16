@@ -17,13 +17,12 @@ function loadpage() {
 function activatenavigation(){
 	var currentHTML = window.location.href.split("/")[window.location.href.split("/").length-1];
 	var navlinks = [];
-	navlinks = document.getElementsByClassName("nav-link");
+	navlinks = $("li.nav-item");
 	for (var i of navlinks){
 		console.log("The value of i is:" + i + "backend of i");
-		if(i.href == currentHTML){
-			console.log(i.href);
+		if(i.querySelector("a[href^=" + CSS.escape(currentHTML)"]")!== null ){
+			console.log(i.querySelector('a[href^=currentHTML]'));
 			i.classList.add("active");
 		}
 	}
 };
-	
