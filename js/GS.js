@@ -20,8 +20,7 @@ function activatenavigation(){
 	var navlinks = [];
 	navlinks = document.getElementsByClassName("nav-link");
 	for (var i of navlinks){
-		console.log(i);
-		console.log(currentHTML);
+		console.log("The value of i is:" + i);
 		if(navlinks[i].href = currentHTML){
 			console.log(navlinks[i]);
 			navlinks[i].classList.add("active");
