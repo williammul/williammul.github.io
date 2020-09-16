@@ -1,5 +1,5 @@
   $(document).ready(function () {
-	  loadnav(activatenavigation());
+	  loadpage();
 	  
        /* var url = window.location;
         $('a.nav-item[href="'+ url +'"]').parent().addClass('active');
@@ -7,11 +7,11 @@
              return this.href == url;
         }).parent().addClass('active');*/
 });
-function loadnav(callback) {
+function loadpage() {
 	$("#nav-placeholder").load("/nav.html", function(){
 		$(".navbar").unwrap();
+		activatenavigation();
 	});
-	callback();
 }
 
 function activatenavigation(){
