@@ -1,6 +1,5 @@
   $(document).ready(function () {
-	  loadnav();
-	  activatenavigation();
+	  loadnav(activatenavigation());
 	  
        /* var url = window.location;
         $('a.nav-item[href="'+ url +'"]').parent().addClass('active');
@@ -8,15 +7,14 @@
              return this.href == url;
         }).parent().addClass('active');*/
 });
-function loadnav() {
+function loadnav(callback) {
 	$("#nav-placeholder").load("/nav.html", function(){
 		$(".navbar").unwrap();
 	});
-	
+	callback();
 }
 
-async function activatenavigation(){
-	await loadnav();
+function activatenavigation(){
 	var currentHTML = window.location.href.split("/")[window.location.href.split("/").length-1];
 	var navlinks = [];
 	navlinks = document.getElementsByClassName("nav-link");
