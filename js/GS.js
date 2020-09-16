@@ -15,12 +15,13 @@ function loadnav() {
 	
 }
 
-function activatenavigation(){
+async function activatenavigation(){
+	await loadnav();
 	var currentHTML = window.location.href.split("/")[window.location.href.split("/").length-1];
 	var navlinks = [];
 	navlinks = document.getElementsByClassName("nav-link");
 	for (var i of navlinks){
-		console.log("The value of i is:" + i);
+		console.log("The value of i is:" + i + "backend of i");
 		if(navlinks[i].href = currentHTML){
 			console.log(navlinks[i]);
 			navlinks[i].classList.add("active");
