@@ -10,7 +10,7 @@
 function loadpage() {
 	$("#nav-placeholder").load("/nav.html", function(){
 		$(".navbar").unwrap();
-		activatenavigation();
+		clearcurractive(activatenavigation());
 	});
 }
 
@@ -26,3 +26,14 @@ function activatenavigation(){
 		}
 	}
 };
+
+function clearcurractive(func){
+	var navlinks = [];
+	navlinks = $("li.nav-item");
+	for (var i of navlinks){
+		if(i.hasClass("active" ){
+			i.classList.remove("active");
+		}
+	}
+	activatenavigation();
+}
