@@ -31,7 +31,7 @@ function clearcurractive(func){
 	var navlinks = [];
 	navlinks = $("li.nav-item");
 	for (var i of navlinks){
-		if(i.hasClass("active" ){
+		if(i.hasClass("active")){
 			i.classList.remove("active");
 		}
 	}
