@@ -22,6 +22,7 @@ function activatenavigation(){
 		console.log("The value of i is:" + i + "backend of i");
 		if(i.querySelector("a[href^=" + CSS.escape(currentHTML)+"]")!== null ){
 			console.log(i.querySelector("a[href^=" + CSS.escape(currentHTML)+"]"));
+			i.querySelector("a[href^=" + CSS.escape(currentHTML)+"]").classList.add("active");
 			i.classList.add("active");
 		}
 	}
