@@ -28,6 +28,6 @@ function activatenavigation(){
 };
 
 function clearcurractive(func){
-	$(.navbar-nav .active").removeClass("active");
+	$(".navbar-nav .active").removeClass("active");
 	activatenavigation();
 }
