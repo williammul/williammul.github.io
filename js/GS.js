@@ -35,6 +35,9 @@ function clearcurractive(func){
 
 function searchGBF(){
 	$.getJSON("../json/Test.json", function(data){
+		console.log(data)
+		console.log(data.Name);
+		console.log(data.Type);
 		var text_result= '';
 		$.each(data, function(key, value) {
 			text_result += value.Type;
