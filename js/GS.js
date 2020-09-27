@@ -34,17 +34,17 @@ function clearcurractive(func){
 }
 
 function searchGBF(){
-	var selectedtype= $("#typeselected").value();
-	/*$.getJSON("../json/Test.json", function(data){
-		var text_result= '';
-		$.each(data, function(key, value) {
-			text_result += value.Type;
-			console.log("Key is "+ key);
-			console.log("Value is "+value);
-			text_result += value.Name;
+	var selectedtype= $("#typeselect").val();
+	var result = [];
+	$.getJSON("../json/Test.json", function(data){
+			$.each(data, function(key, value) {
+			console.log("Key is :" + key);
+			if(selectedtype == key){
+			result.append(value);	
+			console.log("value is : " + value);
+			}
 		});
 		console.log(text_result);
-		$('.placeholderresult').append(text_result);
+		$('.placeholderresult').append(result);
 	});
-	*/
 }
