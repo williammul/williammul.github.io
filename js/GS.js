@@ -32,3 +32,13 @@ function clearcurractive(func){
 	$(".navbar-nav .active").removeClass("active");
 	activatenavigation();
 }
+
+function searchGBF(){
+	$.getJSON("../json/Test.json", function(data){
+		var text_result= '';
+		$.each(data, function(key, value) {
+			text_result += value.Type;
+			text_result += value.Name;
+		});
+		$('#placeholderresult').append(text_result);
+}
