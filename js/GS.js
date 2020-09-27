@@ -40,6 +40,6 @@ function searchGBF(){
 			text_result += value.Type;
 			text_result += value.Name;
 		});
-		$('#placeholderresult').append(text_result);
+		$('.placeholderresult').append(text_result);
 	});
 }
