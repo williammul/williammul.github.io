@@ -34,7 +34,8 @@ function clearcurractive(func){
 }
 
 function searchGBF(){
-	$.getJSON("../json/Test.json", function(data){
+	var selectedtype= $("#typeselected").value();
+	/*$.getJSON("../json/Test.json", function(data){
 		var text_result= '';
 		$.each(data, function(key, value) {
 			text_result += value.Type;
@@ -45,4 +46,5 @@ function searchGBF(){
 		console.log(text_result);
 		$('.placeholderresult').append(text_result);
 	});
+	*/
 }

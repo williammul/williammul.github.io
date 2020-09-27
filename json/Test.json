@@ -1,6 +1,14 @@
 [
 {
-		"Type" : "Character",
-		"Name" : "Test"
+	"Type" : "Character",
+	"Name" : "Character_name"
+},
+{
+	"Type" : "Skill",
+	"Name" : "Skill_name"
+}
+{
+	"Type" : "Weapon",
+	"Name" : "Weapon_name"
 }
 ]
