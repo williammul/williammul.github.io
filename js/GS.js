@@ -41,7 +41,7 @@ function searchGBF(){
 			console.log("Key is :" + key);
 			console.log("value of type: " + value.Type);
 			if(selectedtype == value.Type){
-			result.append(value.Type);	
+			result.push(value.Type);	
 			}
 		});
 		$('.placeholderresult').append(result);
