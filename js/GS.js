@@ -38,8 +38,8 @@ function searchGBF(){
 		var text_result= '';
 		$.each(data, function(key, value) {
 			text_result += value.Type;
-			console.log(key);
-			console.log(value);
+			console.log("Key is "+ key);
+			console.log("Value is "+value);
 			text_result += value.Name;
 		});
 		console.log(text_result);
