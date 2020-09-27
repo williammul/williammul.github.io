@@ -39,12 +39,12 @@ function searchGBF(){
 	$.getJSON("../json/Test.json", function(data){
 			$.each(data, function(key, value) {
 			console.log("Key is :" + key);
+			console.log("value is:" + value);
 			if(selectedtype == key){
 			result.append(value);	
 			console.log("value is : " + value);
 			}
 		});
-		console.log(text_result);
 		$('.placeholderresult').append(result);
 	});
 }
