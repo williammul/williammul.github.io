@@ -41,4 +41,5 @@ function searchGBF(){
 			text_result += value.Name;
 		});
 		$('#placeholderresult').append(text_result);
+	}
 }
