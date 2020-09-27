@@ -39,11 +39,9 @@ function searchGBF(){
 	$.getJSON("../json/Test.json", function(data){
 			$.each(data, function(key, value) {
 			console.log("Key is :" + key);
-			console.log("value is:" + value);
 			console.log("value of type: " + value.Type);
-			if(selectedtype == key){
-			result.append(value);	
-			console.log("value is : " + value);
+			if(selectedtype == value.Type){
+			result.append(value.Type);	
 			}
 		});
 		$('.placeholderresult').append(result);
