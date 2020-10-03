@@ -1,14 +1,14 @@
-[
 {
-	"Type" : "Character",
-	"Name" : "Character_name"
-},
-{
-	"Type" : "Skill",
-	"Name" : "Skill_name"
-},
-{
-	"Type" : "Weapon",
-	"Name" : "Weapon_name"
+	"Characters" : [
+		{"id"	:	1,
+		"Name"	:	"Test name"
+		}],
+	"Skill" : [
+		{"id"	:	1,
+		"Name"	:	"Skill name"
+		}],
+	"Weapon" : [
+		{"id"	:	1,
+		"Name"	:	"Weapon name"
+		}]
 }
-]
