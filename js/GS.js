@@ -38,12 +38,16 @@ function searchGBF(){
 	var result = [];
 	$.getJSON("../json/Test.json", function(data){
 			$.each(data, function(key, value) {
-			console.log("Key is :" + key);
-			if(selectedtype == key){
-			console.log("value of value: " + value);
-			console.log("value of Name: " + value.Name);
-			result.push(value.Name);
-			console.log(result);
+				console.log("Key is :" + key);
+				if(selectedtype == key){
+					$.each(value, function(key2,value2) {
+						console.log("Key2 is : " +key2);
+						console.log("value2 is :" +value2);
+						console.log("value2Name is: " +value2.Name);
+						result.push(value2.Name);
+						console.log(result);
+					}
+				}
 			}
 		});
 		$('.placeholderresult').append(result);
