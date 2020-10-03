@@ -36,7 +36,7 @@ function clearcurractive(func){
 function searchGBF(){
 	var selectedtype= $("#typeselect").val();
 	var result = [];
-	$.getJSON("../json/Test.json", function(data){
+	$.getJSON("../json/gbf.json", function(data){
 			$.each(data, function(key, value) {
 				console.log("Key is :" + key);
 				if(selectedtype == key){
