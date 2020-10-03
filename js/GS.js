@@ -40,8 +40,8 @@ function searchGBF(){
 			$.each(data, function(key, value) {
 			console.log("Key is :" + key);
 			console.log("value of type: " + value.Type);
-			if(selectedtype == value.Type){
-			result.push(value.Type);
+			if(selectedtype == key){
+			result.push(value.Name);
 			console.log(result);
 			}
 		});
