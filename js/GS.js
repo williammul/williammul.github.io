@@ -46,10 +46,9 @@ function searchGBF(){
 						console.log("value2Name is: " +value2.Name);
 						result.push(value2.Name);
 						console.log(result);
-					}
+					});
 				}
-			}
+			});
 		});
 		$('.placeholderresult').append(result);
-	});
 }
