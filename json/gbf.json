@@ -1,14 +1,19 @@
 {
-	"Characters" : [
+	"MC"	:	[
 		{"id"	:	1,
-		"Name"	:	"Test name"
+		"Class"	:	"Alchemist",
+		"Support Skill"	:	[{"SS1_Effect"	:	"Boost to green and blue potions' effects","SS2_Effect"	:	"5% boost to 'A Little Pick-Me-Up'"}]
 		}],
-	"Skill" : [
+	"Character" : [
 		{"id"	:	1,
-		"Name"	:	"Skill name"
+		"Name"	:	""
 		}],
 	"Weapon" : [
 		{"id"	:	1,
 		"Name"	:	"Weapon name"
+		}],
+	"Summon"	:	[
+		{"id"	:	1,
+		"Name"	:	"Summon name"
 		}]
 }
