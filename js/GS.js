@@ -55,7 +55,6 @@ function searchGBF(){
 }
 
 function addtag(e){
-	console.log(e).
 	console.log($(e)).
 	console.log($(e).text());
 	var tag_name = $(e).text();
