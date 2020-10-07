@@ -1,4 +1,6 @@
-  $(document).ready(function () {
+var selected_tags = [];
+
+$(document).ready(function () {
 	  loadpage();
 	  
        /* var url = window.location;
@@ -50,4 +52,16 @@ function searchGBF(){
 			});
 		});
 		$('.placeholderresult').append(result);
+}
+
+function addtag(e){
+	var tag_name = e.text();
+	if($.inArray(tag_name),selected_tags) != -1){
+	selected_tags = $.grep(selected_tags, function(tag_name){
+		return e != selected_tags;
+	});
+	console.log(selected_tags);
+	}else{
+	selected_tags.push($(this).text());
+	console.log(selectedtags);
 }
