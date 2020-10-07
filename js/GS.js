@@ -55,8 +55,6 @@ function searchGBF(){
 }
 
 function addtag(e){
-	console.log($(e));
-	console.log($(e).text());
 	var tag_name = $(e).text();
 	if($.inArray(tag_name,selected_tags) != -1){
 	selected_tags = $.grep(selected_tags, function(tag_name){
@@ -65,6 +63,6 @@ function addtag(e){
 	console.log(selected_tags);
 	}else{
 	selected_tags.push($(this).text());
-	console.log(selectedtags);
+	console.log(selected_tags);
 	}
 }
