@@ -55,7 +55,10 @@ function searchGBF(){
 }
 
 function addtag(e){
-	var tag_name = $(e.text());
+	console.log(e).
+	console.log($(e)).
+	console.log($(e).text());
+	var tag_name = $(e).text();
 	if($.inArray(tag_name,selected_tags) != -1){
 	selected_tags = $.grep(selected_tags, function(tag_name){
 		return e != selected_tags;
