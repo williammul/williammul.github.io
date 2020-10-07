@@ -62,7 +62,7 @@ function addtag(e){
 	});
 	console.log(selected_tags);
 	}else{
-	selected_tags.push($(this).text());
+	selected_tags.push(tag_name);
 	console.log(selected_tags);
 	}
 }
