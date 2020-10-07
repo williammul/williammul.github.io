@@ -64,4 +64,5 @@ function addtag(e){
 	}else{
 	selected_tags.push($(this).text());
 	console.log(selectedtags);
+	}
 }
