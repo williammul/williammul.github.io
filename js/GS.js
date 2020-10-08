@@ -44,10 +44,13 @@ function searchGBF(){
 				if(selectedtype == key){
 					$.each(value, function(key2,value2) {
 						console.log("Key2 is : " +key2);
-						console.log(value2.Tags);
-						if(key2 == "Tags"){
-						console.log(value2.Tags)	
-						console.log(result);
+						$.each(selected_tags, function(tagitem){
+								if($.inArray(tagitem,value2.Tags){
+								console.log(value2.Tags);
+								result.push(value2.id);
+								console.log(result);	
+							}
+							
 						}
 					});
 				}
