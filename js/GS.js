@@ -45,7 +45,7 @@ function searchGBF(){
 					$.each(value, function(key2,value2) {
 						console.log("Key2 is : " +key2);
 						$.each(selected_tags, function(tagitem){
-								if($.inArray(tagitem,value2.Tags)){
+								if($.inArray(tagitem,value2.Tags != -1)){
 								console.log(value2.Tags);
 								result.push(value2.id);
 								console.log(result);	
