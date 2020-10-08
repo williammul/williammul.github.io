@@ -6,7 +6,12 @@
 		}],
 	"Character" : [
 		{"id"	:	1,
-		"Name"	:	""
+		"Name"	:	"Albert",
+		"Tags"	:	["Bonus Light DMG","Character Buff","Light DEF Down","Delay","Guaranteed TA","Double Skill usage","Skill DMG Up Stack","Skill DMG Cap Up","Double Strike","Instant Charge","End Skill Cooldown","Reflect","Guaranteed DA","Have EMP"]			
+		},
+		{"id"	:	2,
+		"Name"	:	"Abby",
+		"Tags"	:	["Extend Buff","Character Buff","ATK Up","DMG Cap Up","DA Up","TA Up","Strength","Gravity","Instant Charge","C.A. Damage Up","C.A. Damage Cap Up","Refresh","Stamina"]
 		}],
 	"Weapon" : [
 		{"id"	:	1,
