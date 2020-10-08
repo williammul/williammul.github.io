@@ -56,8 +56,9 @@ function searchGBF(){
 					});
 				}
 			});
+		$('.placeholderresult').append(result);	
 		});
-		$('.placeholderresult').append(result);
+		
 }
 
 function addtag(e){
