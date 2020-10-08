@@ -4,7 +4,7 @@
 		"Class"	:	"Alchemist",
 		"Support Skill"	:	[{"SS1_Effect"	:	"Boost to green and blue potions' effects","SS2_Effect"	:	"5% boost to 'A Little Pick-Me-Up'"}]
 		}],
-	"Character" : [
+	"Characters" : [
 		{"id"	:	1,
 		"Name"	:	"Albert",
 		"Tags"	:	["Bonus Light DMG","Character Buff","Light DEF Down","Delay","Guaranteed TA","Double Skill usage","Skill DMG Up Stack","Skill DMG Cap Up","Double Strike","Instant Charge","End Skill Cooldown","Reflect","Guaranteed DA","Have EMP"]			
