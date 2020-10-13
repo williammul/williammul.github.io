@@ -1,5 +1,5 @@
 var selected_tags = [];
-var tableresult= ["<table id="resultset"><thead><tr><th>Name</th></thead><tbody>"];
+var tableresult= ["<table id=\"resultset\"><thead><tr><th>Name</th></thead><tbody>"];
 
 $(document).ready(function () {
 	  loadpage();
