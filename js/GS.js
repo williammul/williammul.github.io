@@ -58,7 +58,7 @@ function searchGBF(){
 			});	
 		$('#resultset').append(result);	
 		});
-		$('#resultset').DataTable();
+		$('#resulttable').DataTable();
 }
 
 function addtag(e){
