@@ -60,9 +60,8 @@ function searchGBF(){
 			});
 		result.push(tableresult[1]);	
 		$('.placeholderresult').append();	
-		$('#resultset').DataTable();
 		});
-		
+		$('#resultset').DataTable();
 }
 
 function addtag(e){
