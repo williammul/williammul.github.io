@@ -1,4 +1,5 @@
 var selected_tags = [];
+var tableresult= ["<table id="resultset"><thead><tr><th>Name</th></thead><tbody>"];
 
 $(document).ready(function () {
 	  loadpage();
@@ -49,13 +50,15 @@ function searchGBF(){
 								console.log("condition check" + $.inArray(tagitem,value2.Tags));
 								if($.inArray(tagitem,value2.Tags) != -1){
 								console.log(value2.Tags);
-								result.push(value2.id);
+								result.push("<tr><td>"+value2.id+"</td></tr>");
 								console.log(result);	
 							}
 						});
 					});
 				}
 			});
+		$('.placeholderresult').append(tableresult);
+		$('#resultset').DataTable();
 		$('.placeholderresult').append(result);	
 		});
 		
