@@ -1,5 +1,4 @@
 var selected_tags = [];
-var tableresult= ["<table id=\"resultset\"><thead><tr><th>Name</th></thead><tbody>","</tbody></table>"];
 
 $(document).ready(function () {
 	  loadpage();
@@ -39,7 +38,6 @@ function clearcurractive(func){
 function searchGBF(){
 	var selectedtype= $("#typeselect").val();
 	var result = [];
-	result.push(tableresult[0]);
 	$.getJSON("../json/gbf.json", function(data){
 			$.each(data, function(key, value) {
 				console.log("Key is :" + key);
@@ -57,10 +55,8 @@ function searchGBF(){
 						});
 					});
 				}
-			});
-		result.push(tableresult[1]);	
-		console.log(result);
-		$('.placeholderresult').append(result);	
+			});	
+		$('#resultset').append(result);	
 		});
 		$('#resultset').DataTable();
 }
