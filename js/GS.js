@@ -51,9 +51,9 @@ function searchGBF(){
 								console.log("condition check" + $.inArray(tagitem,value2.Tags));
 								if($.inArray(tagitem,value2.Tags) != -1){
 								console.log(value2.Tags);
-								result.push("<tr><td>"+value2.id+"</td>");
-								result.push("<td>"+value2.Tags+"</td>");
-								result.push("<td>"+value2.Rarity+"</td></tr>");
+								result.push(value2.id);
+								result.push(value2.Tags);
+								result.push(value2.Rarity);
 								console.log(result);	
 							}
 						});
