@@ -12,6 +12,10 @@
 		{"id"	:	2,
 		"Name"	:	"Abby",
 		"Tags"	:	["Extend Buff","Character Buff","ATK Up","DMG Cap Up","DA Up","TA Up","Strength","Gravity","Instant Charge","C.A. Damage Up","C.A. Damage Cap Up","Refresh","Stamina"]
+		},
+		{"id"	:	3,
+		"Name"	:	"Airi Totoki",
+		"Tags"	:	["Character Buff","Heal","ATK Up","DA Up","Charge Bar Boost"]
 		}],
 	"Weapon" : [
 		{"id"	:	1,
