@@ -37,8 +37,7 @@ function clearcurractive(func){
 }
 
 function searchGBF(){
-	$('#resulttable').clear();
-	$('#resulttable').draw();
+	$('#resulttable').clear().draw();
 	var selectedtype= $("#typeselect").val();
 	var result = [];
 	$.getJSON("../json/gbf.json", function(data){
