@@ -60,7 +60,7 @@ function searchGBF(){
 					});
 				}
 			});	
-		$('#resulttable').DataTable().rows().add(result).draw();	
+		$('#resulttable').DataTable().rows.add(result).draw();	
 		});
 }
 
