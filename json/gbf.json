@@ -7,15 +7,18 @@
 	"Characters" : [
 		{"id"	:	1,
 		"Name"	:	"Albert",
-		"Tags"	:	["Bonus Light DMG","Character Buff","Light DEF Down","Delay","Guaranteed TA","Double Skill usage","Skill DMG Up Stack","Skill DMG Cap Up","Double Strike","Instant Charge","End Skill Cooldown","Reflect","Guaranteed DA","Have EMP"]			
+		"Tags"	:	["Bonus Light DMG","Character Buff","Light DEF Down","Delay","Guaranteed TA","Double Skill usage","Skill DMG Up Stack","Skill DMG Cap Up","Double Strike","Instant Charge","End Skill Cooldown","Reflect","Guaranteed DA","Have EMP"]			,
+		"Rarity"	:	"SSR"
 		},
 		{"id"	:	2,
 		"Name"	:	"Abby",
-		"Tags"	:	["Extend Buff","Character Buff","ATK Up","DMG Cap Up","DA Up","TA Up","Strength","Gravity","Instant Charge","C.A. Damage Up","C.A. Damage Cap Up","Refresh","Stamina"]
+		"Tags"	:	["Extend Buff","Character Buff","ATK Up","DMG Cap Up","DA Up","TA Up","Strength","Gravity","Instant Charge","C.A. Damage Up","C.A. Damage Cap Up","Refresh","Stamina"],
+		"Rarity"	:	"SSR"
 		},
 		{"id"	:	3,
 		"Name"	:	"Airi Totoki",
-		"Tags"	:	["Character Buff","Heal","ATK Up","DA Up","Charge Bar Boost"]
+		"Tags"	:	["Character Buff","Heal","ATK Up","DA Up","Charge Bar Boost"],
+		"Rarity"	:	"SSR"
 		}],
 	"Weapon" : [
 		{"id"	:	1,

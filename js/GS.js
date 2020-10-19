@@ -13,6 +13,7 @@ function loadpage() {
 	$("#nav-placeholder").load("/nav.html", function(){
 		$(".navbar").unwrap();
 		clearcurractive(activatenavigation());
+		$("#resulttable).DataTable();
 	});
 }
 
@@ -36,6 +37,8 @@ function clearcurractive(func){
 }
 
 function searchGBF(){
+	$('#resulttable').clear();
+	$('#resulttable').draw();
 	var selectedtype= $("#typeselect").val();
 	var result = [];
 	$.getJSON("../json/gbf.json", function(data){
@@ -49,14 +52,16 @@ function searchGBF(){
 								console.log("condition check" + $.inArray(tagitem,value2.Tags));
 								if($.inArray(tagitem,value2.Tags) != -1){
 								console.log(value2.Tags);
-								result.push("<tr><td>"+value2.id+"</td></tr>");
+								result.push("<tr><td>"+value2.id+"</td>");
+								result.push("<td>"+value2.Tags+"</td>");
+								result.push("<td>"+value2.Rarity+"</td></tr>");
 								console.log(result);	
 							}
 						});
 					});
 				}
 			});	
-		$('#resultset').append(result);	
+		$('#resulttable').push(result);	
 		});
 }
 
