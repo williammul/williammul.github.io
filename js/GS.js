@@ -37,7 +37,7 @@ function clearcurractive(func){
 }
 
 function searchGBF(){
-	$('#resulttable').clear().draw();
+	$('#resulttable').DataTable().clear().draw();
 	var selectedtype= $("#typeselect").val();
 	var result = [];
 	$.getJSON("../json/gbf.json", function(data){
@@ -60,7 +60,7 @@ function searchGBF(){
 					});
 				}
 			});	
-		$('#resulttable').push(result);	
+		$('#resulttable').DataTable().rows().add(result).draw();	
 		});
 }
 
