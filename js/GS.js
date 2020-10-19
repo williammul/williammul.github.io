@@ -13,7 +13,7 @@ function loadpage() {
 	$("#nav-placeholder").load("/nav.html", function(){
 		$(".navbar").unwrap();
 		clearcurractive(activatenavigation());
-		$("#resulttable).DataTable();
+		$('#resulttable').DataTable();
 	});
 }
 
