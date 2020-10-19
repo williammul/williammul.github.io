@@ -54,7 +54,7 @@ function searchGBF(){
 								result.push(value2.id);
 								result.push(value2.Tags);
 								result.push(value2.Rarity);
-								console.log("Result is" + result);	
+								console.log(result);	
 							}
 						});
 					});
