@@ -52,7 +52,7 @@ function searchGBF(){
 								if($.inArray(tagitem,value2.Tags) != -1){
 								console.log(value2.Tags);
 								result.push(value2.id);
-								result.push(value2.Tags);
+								result.push(value2.Tags.toString());
 								result.push(value2.Rarity);
 								console.log(result);	
 							}
