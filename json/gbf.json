@@ -1,31 +1,31 @@
 {
 	"MC"	:	[
-		{"id"	:	1,
+		{"id"	:	"1",
 		"Class"	:	"Alchemist",
 		"Support Skill"	:	[{"SS1_Effect"	:	"Boost to green and blue potions' effects","SS2_Effect"	:	"5% boost to 'A Little Pick-Me-Up'"}]
 		}],
 	"Characters" : [
-		{"id"	:	1,
+		{"id"	:	"1",
 		"Name"	:	"Albert",
 		"Tags"	:	["Bonus Light DMG","Character Buff","Light DEF Down","Delay","Guaranteed TA","Double Skill usage","Skill DMG Up Stack","Skill DMG Cap Up","Double Strike","Instant Charge","End Skill Cooldown","Reflect","Guaranteed DA","Have EMP"]			,
 		"Rarity"	:	"SSR"
 		},
-		{"id"	:	2,
+		{"id"	:	"2",
 		"Name"	:	"Abby",
 		"Tags"	:	["Extend Buff","Character Buff","ATK Up","DMG Cap Up","DA Up","TA Up","Strength","Gravity","Instant Charge","C.A. Damage Up","C.A. Damage Cap Up","Refresh","Stamina"],
 		"Rarity"	:	"SSR"
 		},
-		{"id"	:	3,
+		{"id"	:	"3",
 		"Name"	:	"Airi Totoki",
 		"Tags"	:	["Character Buff","Heal","ATK Up","DA Up","Charge Bar Boost"],
 		"Rarity"	:	"SSR"
 		}],
 	"Weapon" : [
-		{"id"	:	1,
+		{"id"	:	"1",
 		"Name"	:	"Weapon name"
 		}],
 	"Summon"	:	[
-		{"id"	:	1,
+		{"id"	:	"1",
 		"Name"	:	"Summon name"
 		}]
 }
