@@ -50,17 +50,18 @@ function searchGBF(){
 								console.log("Tag item is: " + tagitem);
 								console.log("condition check" + $.inArray(tagitem,value2.Tags));
 								if($.inArray(tagitem,value2.Tags) != -1){
+								result = [];
 								console.log(value2.Tags);
 								result.push(value2.id);
 								result.push(value2.Tags.toString());
 								result.push(value2.Rarity);
+								$('#resulttable').DataTable().row.add(result).draw();	
 								console.log(result);	
 							}
 						});
 					});
 				}
 			});	
-		$('#resulttable').DataTable().rows.add(result).draw();	
 		});
 }
 
