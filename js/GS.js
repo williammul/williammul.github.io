@@ -70,9 +70,11 @@ function addtag(e){
 	if($.inArray(tag_name,selected_tags) != -1){
 	var indextoremove = selected_tags.indexOf(tag_name);
 	selected_tags.splice(indextoremove,1);
+	$('#SelectedTags').tagsinput('remove',selected_tags);
 	console.log(selected_tags);
 	}else{
 	selected_tags.push(tag_name);
+	$('#SelectedTags').tagsinput('add',selected_tags);
 	console.log(selected_tags);
 	}
 }
