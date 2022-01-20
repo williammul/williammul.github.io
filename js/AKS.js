@@ -37,17 +37,18 @@ function clearcurractive(func){
 	activatenavigation();
 }
 
-function searchGBF(){
+function searchAK(){
 	$('#resulttable').DataTable().clear().draw();
 	var selectedtype= $("#typeselect").val();
 	var result = [];
-	$.getJSON("../json/gbf.json", function(data){
+	var chosentags [] = $('#tagselect').chosen().val();
+	$.getJSON("../json/ak.json", function(data){
 			$.each(data, function(key, value) {
 				console.log("Key is :" + key);
 				if(selectedtype == key){
 					$.each(value, function(key2,value2) {
 						console.log("Key2 is : " +key2);
-						$.each(selected_tags, function(index,tagitem){
+						$.each(chosentags, function(index,tagitem){
 								console.log("Tag item is: " + tagitem);
 								console.log("condition check" + $.inArray(tagitem,value2.Tags));
 								if($.inArray(tagitem,value2.Tags) != -1){
@@ -67,6 +68,7 @@ function searchGBF(){
 }
 
 function addtag(e){
+	//this is not needed ith chosen.
 	var tag_name = $(e).text();
 	if($.inArray(tag_name,selected_tags) != -1){
 	var indextoremove = selected_tags.indexOf(tag_name);

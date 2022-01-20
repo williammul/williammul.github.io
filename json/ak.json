@@ -1,0 +1,13 @@
+{
+	"Characters" : [
+		{"id"	:	"1",
+		"Name"	:	"Ch'en",
+		"Tags"	:	["Nuker","DPS"],
+		"Rarity"	:	"6*"
+		},
+		{"id"	:	"2",
+		"Name"	:	"Siege",
+		"Tags"	:	["DP-recovery","DPS"],
+		"Rarity"	:	"6*"
+		}
+}
