@@ -14,6 +14,7 @@ function loadpage() {
 		$(".navbar").unwrap();
 		clearcurractive(activatenavigation());
 		$('#resulttable').DataTable();
+		$('.chosen-select').chosen();
 	});
 }
 
