@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.22/datatables.min.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.22/datatables.min.js"></script>
+<script src="js/bootstrap.js"> </script>
+<script src="js/AKS.js"></script>
+
+<html>
+<body>
+<nav id="nav-placeholder"></nav>
+<div class="container">
+<h1> Arknights </h1>
+
+<div class="alert alert-dark" role="alert">
+<p> Search page for Arknights</p>
+<p> How to use: </p>
+<ul>
+	<li>item 1</li>
+	<li>item 2</li>
+	<li>item 3</li>
+</ul>
+</div>
+	<div class="row">
+		<div class="col-sm">
+			<form>
+		<p> Start by selecting a criteria to search </p>
+			<div class="form-group row">
+				<label for="type" class="col-sm-2 col-form-label">Type</label>
+				<div class="col-sm-10">
+					<select class="custom-select" id="typeselect">
+						<option value="" selected>Select a type</option>
+						<option value="Characters">Characters</option>
+						<option value="Skill">Skill</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="Skill Tag" class="col-sm-2 col-form-label">Skill Tag</label>
+				<div class="btn-group col-sm-10" role="group">		
+					<button type="button" class="btn btn-secondary" data-toggle="button" onclick="addtag(this)">Delay</button>
+					<button type="button" class="btn btn-secondary" data-toggle="button" onclick="addtag(this)">ATK Up</button>
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-sm-12">
+					<button onClick="searchGBF()" type="button" class="btn btn-block btn-light">Search</button>
+				</div>
+			</div>
+			</form>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<table id="resulttable" class="table table-bordered">
+				<thead class="thead-dark">
+					<tr>
+					<th>Name</th>
+					<th>Tags</th>
+					<th>Rarity</th>
+					</tr>
+				</thead>
+				<tbody id="resultset">
+					
+				</tbody>
+			</table>
+				<!--<p class="placeholderresult"></p>-->
+		</div>
+	</div>
