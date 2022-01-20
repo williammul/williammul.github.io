@@ -43,7 +43,7 @@ function searchAK(){
 	var result = [];
 	var chosentags =  [];
 	chosentags	= $('#tagselect').chosen().val();
-	console.log("chosentags: " + chosentags.val();
+	console.log("chosentags: " + chosentags.val());
 	$.getJSON("../json/ak.json", function(data){
 			$.each(data, function(key, value) {
 				console.log("Key is :" + key);
