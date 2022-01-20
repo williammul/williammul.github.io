@@ -41,7 +41,8 @@ function searchAK(){
 	$('#resulttable').DataTable().clear().draw();
 	var selectedtype= $("#typeselect").val();
 	var result = [];
-	var chosentags [] = $('#tagselect').chosen().val();
+	var chosentags =  [];
+	chosentags	= $('#tagselect').chosen().val();
 	$.getJSON("../json/ak.json", function(data){
 			$.each(data, function(key, value) {
 				console.log("Key is :" + key);
