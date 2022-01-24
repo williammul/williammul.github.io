@@ -40,6 +40,8 @@ function clearcurractive(func){
 
 function searchAK(){
 	$('#resulttable').DataTable().clear().draw();
+	$('#tablerow').hide();
+	$('#load').show();
 	var selectedtype= $("#typeselect").val();
 	var result = [];
 	var chosentags =  [];
