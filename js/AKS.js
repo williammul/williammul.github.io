@@ -2,6 +2,7 @@ var selected_tags = [];
 
 $(document).ready(function () {
 	  loadpage();
+	  //$('#load').hide();
 	  
        /* var url = window.location;
         $('a.nav-item[href="'+ url +'"]').parent().addClass('active');
