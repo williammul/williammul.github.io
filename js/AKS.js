@@ -2,7 +2,7 @@ var selected_tags = [];
 
 $(document).ready(function () {
 	  loadpage();
-	  //$('#load').hide();
+	  $('#load').hide();
 	  
        /* var url = window.location;
         $('a.nav-item[href="'+ url +'"]').parent().addClass('active');
@@ -54,6 +54,9 @@ function searchAK(){
 					$.each(value, function(key2,value2) {
 						console.log("Key2 is : " +key2);
 						$.each(chosentags, function(index,tagitem){
+								$('#load').animate({
+									width: "50%",
+								},2500);
 								console.log("Tag item is: " + tagitem);
 								console.log("condition check" + $.inArray(tagitem,value2.Tags));
 								if($.inArray(tagitem,value2.Tags) != -1){
@@ -70,6 +73,11 @@ function searchAK(){
 				}
 			});	
 		});
+	$('#load').animate({
+		width: "100%",
+	},2500);
+	$('#tablerow').show();
+	$('#load').hide();
 }
 
 function addtag(e){
