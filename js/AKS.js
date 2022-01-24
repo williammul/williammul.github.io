@@ -50,7 +50,7 @@ function delaycode() {
 	},5000)
 }
 
-function searchAK(){
+async function searchAK(){
 	$('#resulttable').DataTable().clear().draw();
 	$('#tablerow').hide();
 	$('#load').show();
@@ -64,7 +64,7 @@ function searchAK(){
 				console.log("Key is :" + key);
 				if(selectedtype == key){
 					$.each(value, function(key2,value2) {
-						animateprogressbar(delaycode(),"50%");
+						await animateprogressbar(delaycode(),"50%");
 						console.log("Key2 is : " +key2);
 						$.each(chosentags, function(index,tagitem){
 								console.log("Tag item is: " + tagitem);
@@ -83,7 +83,7 @@ function searchAK(){
 				}
 			});	
 		});
-	animateprogressbar(delaycode(),"100%");
+	await animateprogressbar(delaycode(),"100%");
 	$('#tablerow').show();
 	$('#load').hide();
 }
