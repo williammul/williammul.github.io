@@ -38,16 +38,12 @@ function clearcurractive(func){
 	activatenavigation();
 }
 
-function animateprogressbar (func,widthv) {
-	$('#load').animate({
-		width: widthv
-	},2500);
-}
-
-function delaycode() {
-	setTimeout(function() { 
-		console.log('timeout time 5s');
-	},5000)
+function animateprogressbar (widthv) {
+	return new Promise(function(resolve) {
+		$('#load').animate({
+			width: widthv
+		},2500);
+	});
 }
 
 async function searchAK(){
@@ -64,7 +60,7 @@ async function searchAK(){
 				console.log("Key is :" + key);
 				if(selectedtype == key){
 					$.each(value, function(key2,value2) {
-						await animateprogressbar(delaycode(),"50%");
+						await animateprogressbar("50%");
 						console.log("Key2 is : " +key2);
 						$.each(chosentags, function(index,tagitem){
 								console.log("Tag item is: " + tagitem);
@@ -83,7 +79,7 @@ async function searchAK(){
 				}
 			});	
 		});
-	await animateprogressbar(delaycode(),"100%");
+	await animateprogressbar("100%");
 	$('#tablerow').show();
 	$('#load').hide();
 }
