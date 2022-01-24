@@ -55,7 +55,7 @@ function searchAK(){
 						console.log("Key2 is : " +key2);
 						$.each(chosentags, function(index,tagitem){
 								$('#load').animate({
-									width: "50%",
+									width: "50%"
 								},2500);
 								console.log("Tag item is: " + tagitem);
 								console.log("condition check" + $.inArray(tagitem,value2.Tags));
@@ -74,7 +74,7 @@ function searchAK(){
 			});	
 		});
 	$('#load').animate({
-		width: "100%",
+		width: "100%"
 	},2500);
 	$('#tablerow').show();
 	$('#load').hide();
