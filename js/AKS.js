@@ -38,6 +38,18 @@ function clearcurractive(func){
 	activatenavigation();
 }
 
+function animateprogressbar (func,widthv) {
+	$('#load').animate({
+		width: widthv
+	},2500);
+}
+
+function delaycode() {
+	setTimeout(function() { 
+		console.log('timeout time 5s');
+	},5000)
+}
+
 function searchAK(){
 	$('#resulttable').DataTable().clear().draw();
 	$('#tablerow').hide();
@@ -52,11 +64,9 @@ function searchAK(){
 				console.log("Key is :" + key);
 				if(selectedtype == key){
 					$.each(value, function(key2,value2) {
+						animateprogressbar(delaycode(),"50%");
 						console.log("Key2 is : " +key2);
 						$.each(chosentags, function(index,tagitem){
-								$('#load').animate({
-									width: "50%"
-								},2500);
 								console.log("Tag item is: " + tagitem);
 								console.log("condition check" + $.inArray(tagitem,value2.Tags));
 								if($.inArray(tagitem,value2.Tags) != -1){
@@ -73,9 +83,7 @@ function searchAK(){
 				}
 			});	
 		});
-	$('#load').animate({
-		width: "100%"
-	},2500);
+	animateprogressbar(delaycode(),"100%");
 	$('#tablerow').show();
 	$('#load').hide();
 }
@@ -86,7 +94,6 @@ function addtag(e){
 	if($.inArray(tag_name,selected_tags) != -1){
 	var indextoremove = selected_tags.indexOf(tag_name);
 	selected_tags.splice(indextoremove,1);
-	
 	console.log(selected_tags);
 	}else{
 	selected_tags.push(tag_name);
