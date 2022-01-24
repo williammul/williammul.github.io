@@ -93,7 +93,7 @@ function overallsearch (){
 	$('#resulttable').DataTable().clear().draw();
 	$('#tablerow').hide();
 	$('#load').show();
-	searchAK(animateprogressbar("50%"));
+	searchAK(function(){animateprogressbar("50%")});
 	$('#tablerow').show();
 	$('#load').hide();
 }
