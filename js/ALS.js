@@ -74,7 +74,7 @@ function addtag(e){
 async function animateprogressbar (widthv) {
 	$('#load').animate({
 		width: widthv
-	},30000);
+	},3000);
 	console.log("animating progressbar" + widthv);
 	return;
 }
@@ -82,7 +82,7 @@ async function animateprogressbar (widthv) {
 async function overallsearch(){
 	$('#resulttable').DataTable().clear().draw();
 	$('#tablerow').hide();
-	$('#load').show();
+	$('#loaddiv').show();
 	animateprogressbar("50%").then(searchGBF()).then(animateprogressbar("100%"));
 	$('#tablerow').show();
 	//$('#load').hide();
