@@ -74,7 +74,7 @@ function addtag(e){
 async function animateprogressbar (widthv) {
 	$('#load').animate({
 		width: widthv
-	},3000);
+	},30000);
 	console.log("animating progressbar" + widthv);
 	return;
 }
