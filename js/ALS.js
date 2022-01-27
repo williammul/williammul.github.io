@@ -2,17 +2,11 @@ var selected_tags = [];
 
 $(document).ready(function () {
 	  loadpage();
-	  
-       /* var url = window.location;
-        $('a.nav-item[href="'+ url +'"]').parent().addClass('active');
-        $('a.nav-item').filter(function() {
-             return this.href == url;
-        }).parent().addClass('active');*/
 });
 function loadpage() {
 	$("#nav-placeholder").load("/nav.html", function(){
 		$(".navbar").unwrap();
-		clearcurractive(activatenavigation());
+		clearcurractive(activatenavigation);
 		$('#resulttable').DataTable();
 	});
 }
@@ -33,7 +27,7 @@ function activatenavigation(){
 
 function clearcurractive(func){
 	$(".navbar-nav .active").removeClass("active");
-	activatenavigation();
+	func();
 }
 
 function searchGBF(){
