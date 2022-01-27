@@ -32,7 +32,6 @@ async function clearcurractive(){
 }
 
 async function searchGBF(){
-	$('#resulttable').DataTable().clear().draw();
 	var selectedtype= $("#typeselect").val();
 	var result = [];
 	$.getJSON("../json/gbf.json", function(data){
@@ -71,4 +70,20 @@ function addtag(e){
 	selected_tags.push(tag_name);
 	console.log(selected_tags);
 	}
+}
+function animateprogressbar (widthv) {
+	$('#load').animate({
+		width: widthv
+	},3000);
+}
+
+async function overallsearch(){
+	$('#resulttable').DataTable().clear().draw();
+	$('#tablerow').hide();
+	$('#load').show();
+	animateprogressbar("50%");
+	await searchGBF();
+	animateprogressbar("100%");
+	$('#tablerow').show();
+	$('#load').hide();
 }
