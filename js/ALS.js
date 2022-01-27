@@ -76,15 +76,14 @@ async function animateprogressbar (widthv) {
 		width: widthv
 	},3000);
 	console.log("animating progressbar" + widthv);
+	return;
 }
 
 async function overallsearch(){
 	$('#resulttable').DataTable().clear().draw();
 	$('#tablerow').hide();
 	$('#load').show();
-	await animateprogressbar("50%");
-	await searchGBF();
-	await animateprogressbar("100%");
+	animateprogressbar("50%").then(searchGBF()).then(animateprogressbar("100%"));
 	$('#tablerow').show();
 	$('#load').hide();
 }
