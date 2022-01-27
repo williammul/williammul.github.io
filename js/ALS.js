@@ -85,5 +85,5 @@ async function overallsearch(){
 	$('#load').show();
 	animateprogressbar("50%").then(searchGBF()).then(animateprogressbar("100%"));
 	$('#tablerow').show();
-	$('#load').hide();
+	//$('#load').hide();
 }
