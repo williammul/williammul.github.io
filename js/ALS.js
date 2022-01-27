@@ -31,7 +31,7 @@ async function clearcurractive(){
 	return;
 }
 
-function searchGBF(){
+async function searchGBF(){
 	$('#resulttable').DataTable().clear().draw();
 	var selectedtype= $("#typeselect").val();
 	var result = [];
