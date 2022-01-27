@@ -6,12 +6,13 @@ $(document).ready(function () {
 function loadpage() {
 	$("#nav-placeholder").load("/nav.html", function(){
 		$(".navbar").unwrap();
-		clearcurractive(activatenavigation);
+		activatenavigation();
 		$('#resulttable').DataTable();
 	});
 }
 
 function activatenavigation(){
+	await clearcurractive();
 	var currentHTML = window.location.href.split("/")[window.location.href.split("/").length-1];
 	var navlinks = [];
 	navlinks = $("li.nav-item");
@@ -25,9 +26,9 @@ function activatenavigation(){
 	}
 };
 
-function clearcurractive(func){
+async function clearcurractive(){
 	$(".navbar-nav .active").removeClass("active");
-	func();
+	return;
 }
 
 function searchGBF(){
