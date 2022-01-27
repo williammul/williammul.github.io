@@ -1,9 +1,9 @@
 var selected_tags = [];
 
-$(document).ready(function () {
+$(document).ready(async function () {
 	  loadpage();
 });
-function loadpage() {
+async function loadpage() {
 	$("#nav-placeholder").load("/nav.html", function(){
 		$(".navbar").unwrap();
 		activatenavigation();
@@ -11,7 +11,7 @@ function loadpage() {
 	});
 }
 
-function activatenavigation(){
+async function activatenavigation(){
 	await clearcurractive();
 	var currentHTML = window.location.href.split("/")[window.location.href.split("/").length-1];
 	var navlinks = [];
