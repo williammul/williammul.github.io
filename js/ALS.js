@@ -71,19 +71,20 @@ function addtag(e){
 	console.log(selected_tags);
 	}
 }
-function animateprogressbar (widthv) {
+async function animateprogressbar (widthv) {
 	$('#load').animate({
 		width: widthv
 	},3000);
+	console.log("animating progressbar" + widthv);
 }
 
 async function overallsearch(){
 	$('#resulttable').DataTable().clear().draw();
 	$('#tablerow').hide();
 	$('#load').show();
-	animateprogressbar("50%");
+	await animateprogressbar("50%");
 	await searchGBF();
-	animateprogressbar("100%");
+	await animateprogressbar("100%");
 	$('#tablerow').show();
 	$('#load').hide();
 }
