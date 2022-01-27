@@ -83,7 +83,6 @@ async function overallsearch(){
 	$('#resulttable').DataTable().clear().draw();
 	$('#tablerow').hide();
 	$('#loaddiv').show();
-	animateprogressbar("50%").then(searchGBF()).then(animateprogressbar("100%"));
-	$('#tablerow').show();
+	animateprogressbar("50%").then(searchGBF()).then(animateprogressbar("100%")).then(function (){$('#tablerow').show();});
 	//$('#load').hide();
 }
